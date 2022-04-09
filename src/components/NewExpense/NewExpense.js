@@ -24,7 +24,7 @@ const NewExpense = (props) => {
 
   return (
     <div className='new-expense'>
-      {expenseViewFlag == 0 ?
+      {expenseViewFlag === 0 ?
         <button type='button' onClick={onNewExpenseHandler}>Add new Expense</button>
         : <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} onCancel={onCancelClickHandler} />
       }
